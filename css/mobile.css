@@ -1,0 +1,29 @@
+@charset "UTF-8";
+.julius-sans-one-regular {
+    font-family: "Julius Sans One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Lemon Milk;
+    src: url(../fonts/LEMONMILK-Regular.otf);
+}
+
+:root {
+    --cor1: #ECE9E2;
+    --cor2: #586880;
+    --cor3: #132239;
+    --cor4: #414F69;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+@media screen and (max-width:768px) {
+    h1 {
+        font-family: Lemon Milk;
+    }
+}
