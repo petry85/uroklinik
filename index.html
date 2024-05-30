@@ -16,13 +16,28 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap" rel="stylesheet">
 
+    <!--Link para icones-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
 </head>
 
-<body>
+<body onresize="mudouTamanho()">
     <header>
-        <h1>TESTE</h1>
+        <img src="imagens/logo_azul_semfundo.png" alt="Logo Uroklinik" data-aos="fade">
+        <i id="menu_burguer" class="material-icons" onclick="clickMenu()">menu</i>
+        <nav id="menu_itens">
+            <a href="index.html">Quem Somos</a>
+            <a href="#servicos">Serviços</a>
+            <a id="contato" href="#">Contato</a>
+        </nav>
     </header>
     <main>
+        <div id="quemsomos">A Uroklinik foi criada em 2024 para atender.</div>
+        <div id="servicos">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
 
     </main>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
@@ -30,6 +45,23 @@
         AOS.init({
             duration: 3000,
         });
+    </script>
+    <script>
+        function clickMenu() {
+            if (menu_itens.style.display == 'block') {
+                menu_itens.style.display = 'none'
+            } else {
+                menu_itens.style.display = 'block'
+            }
+        }
+
+        function mudouTamanho() {
+            if (window.innerWidth >= 768) {
+                menu_itens.style.display = 'block'
+            } else {
+                menu_itens.style.display = 'none'
+            }
+        }
     </script>
 </body>
 
