@@ -61,7 +61,7 @@
         list-style-type: none;
         text-align: center;
         background-color: #ECE9E2;
-        width: 70%;
+        width: 72%;
         margin: auto;
         padding: 3px;
     }
@@ -260,6 +260,18 @@
         justify-content: center;
         align-content: center;
         align-items: center;
+        animation: pulo 1s infinite alternate;
+        /* Configuração da animação */
+    }
+    @keyframes pulo {
+        0% {
+            transform: translateY(0);
+            /* Começa na posição normal */
+        }
+        100% {
+            transform: translateY(-10px);
+            /* Pula para cima */
+        }
     }
     button {
         display: block;
