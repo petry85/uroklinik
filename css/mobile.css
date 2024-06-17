@@ -49,12 +49,24 @@
         color: var(--cor1);
         text-align: center;
         cursor: pointer;
-        margin: 15px auto 10px 0;
+        margin: 15px auto 10px auto;
         overflow: hidden;
     }
     #menu_itens {
         display: none;
         overflow: hidden;
+    }
+    #menu_itens ul li {
+        list-style-type: none;
+        text-align: center;
+        background-color: #ECE9E2;
+        width: 70%;
+        margin: auto;
+        padding: 3px;
+    }
+    #menu_itens a {
+        text-decoration: none;
+        color: #132239;
     }
     nav>a {
         display: block;
@@ -64,8 +76,15 @@
         background-color: var(--cor1);
         color: var(--cor3);
         width: 60vw;
-        margin: auto;
+        margin: 15px auto 15px auto;
         font-size: .8em;
+    }
+    #menu_inicio {
+        border-radius: 15px 15px 0 0;
+    }
+    #menu_contato {
+        border-radius: 0 0 15px 15px;
+        margin-bottom: 10px;
     }
     #menu_itens hr {
         width: 65vw;
@@ -105,6 +124,7 @@
     #uroklinik h3 {
         display: block;
         margin-top: 15px;
+        margin-bottom: 10px;
     }
     .fotoperfil {
         display: block;
