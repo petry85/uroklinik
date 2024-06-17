@@ -55,6 +55,7 @@
     #menu_itens {
         display: none;
         overflow: hidden;
+        margin-bottom: 15px;
     }
     #menu_itens ul li {
         list-style-type: none;
@@ -140,6 +141,12 @@
         margin: 0;
         padding: 0;
     }
+    .doutor button a {
+        text-decoration: none;
+        color: #132239;
+        padding: 4px;
+        font-size: .9em;
+    }
     .doutor h2 {
         padding: 20px;
         color: var(--cor3);
@@ -205,6 +212,14 @@
     #procedimentos h6 {
         margin: auto;
         align-items: center;
+        text-align: center;
+    }
+    #procedimentos img {
+        display: block;
+        margin: 20px auto;
+        width: 80%;
+        border-radius: 15px;
+        box-shadow: 2px 2px 10px var(--cor1);
     }
     #contato {
         display: block;
